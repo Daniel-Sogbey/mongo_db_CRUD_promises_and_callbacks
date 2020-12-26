@@ -52,17 +52,17 @@ app.listen(port, () => {
 //
 // myFunction();
 
-const jwt = require("jsonwebtoken");
-
-const myFunction = async () => {
-  const token = await jwt.sign({ _id: "abc123" }, "secretKey", {
-    expiresIn: "7 days",
-  });
-  console.log(token);
-
-  const data = await jwt.verify(token, "secretKey");
-
-  console.log(data._id);
-};
-
-myFunction();
+// const jwt = require("jsonwebtoken");
+//
+// const myFunction = async () => {
+// const token = await jwt.sign({ _id: "abc123" }, "secretKey", {
+// expiresIn: "7 days",
+// });
+// console.log(token);
+//
+// const data = await jwt.verify(token, "secretKey");
+//
+// console.log(data._id);
+// };
+//
+// myFunction();
